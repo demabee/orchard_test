@@ -10,6 +10,7 @@ const Blogs = () => {
         {blogs.map((data) => (
           <Blog
             key={data.id}
+            id={data.id}
             image={data.image}
             title={data.title}
             description={data.description}

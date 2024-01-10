@@ -1,5 +1,15 @@
-import sc from 'styled-components'
+import sc, { keyframes } from 'styled-components'
 import { theme } from '../../styles/theme'
+import { FigureProps } from './type'
+
+const slideRightAnimation = keyframes`
+  0% {
+    transform: translateX(-100px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+`
 
 export const Container = sc.section`
   display: flex;
@@ -10,17 +20,6 @@ export const Container = sc.section`
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
-
-    figure {
-      margin: 0;
-      .ant-image {
-        height: 100%;
-        img {
-          height: 100%;
-          width: 100%;
-        }
-      }
-    }
 
     figure:nth-child(1) {
       grid-row: span 2;
@@ -77,6 +76,19 @@ export const Container = sc.section`
 
     figure:nth-child(1) {
       grid-row: auto;
+    }
+  }
+`
+
+export const Figure = sc.figure<FigureProps>`
+  margin: 0;
+  animation: ${slideRightAnimation} ${(props) =>
+    props.delay * 0.5}s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  .ant-image {
+    height: 100%;
+    img {
+      height: 100%;
+      width: 100%;
     }
   }
 `

@@ -1,4 +1,4 @@
-import { Container } from './style'
+import { Container, Figure } from './style'
 import manWithChild from '../../assets/images/component-01/Image-01.jpg'
 import tomatoAndOnion from '../../assets/images/component-01/Image-02.jpg'
 import bamboo from '../../assets/images/component-01/Image-03.jpg'
@@ -8,19 +8,19 @@ const BodysNeed = () => {
   return (
     <Container>
       <div>
-        <figure>
+        <Figure delay={1}>
           <Image src={manWithChild} alt="manWithChild" preview={{ mask: '' }} />
-        </figure>
-        <figure>
+        </Figure>
+        <Figure delay={2}>
           <Image
             src={tomatoAndOnion}
             alt="tomatoAndOnion"
             preview={{ mask: '' }}
           />
-        </figure>
-        <figure>
+        </Figure>
+        <Figure delay={3}>
           <Image src={bamboo} alt="bamboo" preview={{ mask: '' }} />
-        </figure>
+        </Figure>
       </div>
       <article>
         <h1>ANSWER YOUR BODY&apos;S NEEDS</h1>

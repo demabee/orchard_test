@@ -2,9 +2,9 @@ import React from 'react'
 import { Card } from './style'
 import { BlogProps } from './type'
 
-const Blog: React.FC<BlogProps> = ({ image, title, description }) => {
+const Blog: React.FC<BlogProps> = ({ id, image, title, description }) => {
   return (
-    <Card>
+    <Card delay={id}>
       <img src={image} alt={`${image}`} />
       <figcaption>
         <b>{title}</b>

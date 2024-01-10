@@ -1,8 +1,20 @@
-import sc from 'styled-components'
+import sc, { keyframes } from 'styled-components'
 import { theme } from '../../../styles/theme'
+import { CardProps } from './type'
 
-export const Card = sc.figure`
+const slideTop = keyframes`
+  0% {
+    transform: translateY(500px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+`
+
+export const Card = sc.figure<CardProps>`
   margin: 0;
+  animation: ${slideTop} ${(props) =>
+    props.delay * 0.5}s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
   img {
     width: 100%;
     height: 300px;
