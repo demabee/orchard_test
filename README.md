@@ -19,7 +19,7 @@ Make sure you have the following installed on your machine:
 2. Navigate to the project directory:
 
   ```bash
-  cd your-react-app
+  cd orchard_test
   ```
 
 3. Install dependencies:
