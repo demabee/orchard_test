@@ -14,7 +14,7 @@ export const Section = sc.section`
   }
 
   @media (max-width: 768px) {
-    margin-top: 10px;
+    margin-top: 5rem;
   }
 `
 
