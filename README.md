@@ -14,8 +14,9 @@ Make sure you have the following installed on your machine:
 
 1. Clone the repository:
 
-   ```bash
-   git clone https://github.com/demabee/orchard_test.git
+  ```bash
+  git clone https://github.com/demabee/orchard_test.git
+  ```
 
 2. Navigate to the project directory:
 
