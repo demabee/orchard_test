@@ -8,6 +8,7 @@ Make sure you have the following installed on your machine:
 
 - Node.js (https://nodejs.org/)
 - npm (comes with Node.js)
+- yarn
 
 ## Getting Started
 
