@@ -17,22 +17,27 @@ Make sure you have the following installed on your machine:
    git clone https://github.com/demabee/orchard_test.git
 
 2. Navigate to the project directory:
+
   ```bash
   cd your-react-app
+  ```
 
 3. Install dependencies:
   ```bash
   yarn install
+  ```
 
 4. Run the app
   ```bash
   yarn start
+  ```
 
 ### Building for Production
 
 1. To build the app for production, run this:
   ```bash
   yarn build
+  ```
 
 ### Technical Overview
 
