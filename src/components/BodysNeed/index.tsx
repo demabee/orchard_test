@@ -1,82 +1,47 @@
-import sc from 'styled-components'
-import { theme } from '../../styles/theme'
+import { Container } from './style'
+import manWithChild from '../../assets/images/component-01/Image-01.jpg'
+import tomatoAndOnion from '../../assets/images/component-01/Image-02.jpg'
+import bamboo from '../../assets/images/component-01/Image-03.jpg'
+import { Image } from 'antd'
 
-const BodysNeed = sc.section`
-  display: flex;
-  gap: 15px;
-
-  //image content
-  article:nth-child(1) {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
-
-    figure {
-      margin: 0;
-
-      img {
-        height: 100%;
-        width: 100%;
-      }
-    }
-
-    figure:nth-child(1) {
-      grid-row: span 2;
-    }
-  }
-
-  // text content
-  article:nth-child(2) {
-    font-family: Open Sans;
-    font-weight: 100;
-    color: white;
-    h1 {
-      font-weight: 100;
-      font-size: 1.5em;
-      padding: 10px 0;
-      margin-bottom: 20px;
-      border-bottom: 1px solid white;
-    }
-
-    p {
-      font-weight: 100;
-      font-size: 1.2em;
-    }
-
-    aside {
-      margin-top: 30px;
-      strong {
-        font-family: Open Sans;
-        color: ${theme.color.red};
-      }
-      P {
-        margin-top: 15px;
-        font-weight: 400;
-      }
-    }
-  }
-
-  @media (max-width: 768px) {
-    display: block;
-    gap: 15px;
-    article:nth-child(1) {
-      grid-template-columns: 1fr;
-    }
-
-    figure:nth-child(1) {
-      grid-row: auto;
-    }
-  }
-
-  @media (min-width: 1023px) {
-    article:nth-child(1) {
-      grid-template-columns: 15rem 15rem;
-    }
-
-    figure:nth-child(1) {
-      grid-row: auto;
-    }
-  }
-`
+const BodysNeed = () => {
+  return (
+    <Container>
+      <div>
+        <figure>
+          <Image src={manWithChild} alt="manWithChild" preview={{ mask: '' }} />
+        </figure>
+        <figure>
+          <Image
+            src={tomatoAndOnion}
+            alt="tomatoAndOnion"
+            preview={{ mask: '' }}
+          />
+        </figure>
+        <figure>
+          <Image src={bamboo} alt="bamboo" preview={{ mask: '' }} />
+        </figure>
+      </div>
+      <article>
+        <h1>ANSWER YOUR BODY&apos;S NEEDS</h1>
+        <p>
+          The way ingredients are sourced affects the way we nourish our bodies.
+          Author Mark Schatzer believes our body naturally develops an appetite
+          for the foods and nutrients it needs to be health, but that artificial
+          flavourings are getting in the way. This can be reversed by focusing
+          on high-quality ingredients and being mindful as your appetite guides
+          you to consume according to your body&apos;s needs.
+        </p>
+        <aside>
+          <strong>BE MINDFUL</strong>
+          <p>
+            Sourcing local or organic food is a good way to start being more
+            mindful about what you&apos;re cooking and eating.
+          </p>
+        </aside>
+      </article>
+    </Container>
+  )
+}
 
 export default BodysNeed
