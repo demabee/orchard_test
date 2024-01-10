@@ -14,32 +14,32 @@ Make sure you have the following installed on your machine:
 
 1. Clone the repository:
 
-  ```bash
-  git clone https://github.com/demabee/orchard_test.git
-  ```
+    ```bash
+    git clone https://github.com/demabee/orchard_test.git
+    ```
 
 2. Navigate to the project directory:
 
-  ```bash
-  cd orchard_test
-  ```
+    ```bash
+    cd orchard_test
+    ```
 
 3. Install dependencies:
-  ```bash
-  yarn install
-  ```
+    ```bash
+    yarn install
+    ```
 
 4. Run the app
-  ```bash
-  yarn start
-  ```
+    ```bash
+    yarn start
+    ```
 
 ### Building for Production
 
 1. To build the app for production, run this:
-  ```bash
-  yarn build
-  ```
+    ```bash
+    yarn build
+    ```
 
 ### Technical Overview
 
